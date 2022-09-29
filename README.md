@@ -11,4 +11,5 @@ Pretende-se a criação de uma plataforma web:
  - Desenvolver guiões de ajuda;
  - Desenvolver o front-end e back-end do website;
 Responsaveis:
+
 /Caroline Barbosa /Gonçalo Peixoto /Ricardo Lima
