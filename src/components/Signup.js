@@ -15,11 +15,12 @@ export default function Signup() {
 async function handleSubmit(e) {
     e.preventDefault()
     if(passwordRef.current.value !== confPasswordRef.current.value){
-
+        console.log(passwordRef.current.value.lenght)
         return setError('Password dont match')
 
     }
-    if(passwordRef.current.lenght < 6){
+    
+    if(passwordRef.current.value.lenght < 6){
         return setError('Password needs to be at least 6 char')
     }
     try{
