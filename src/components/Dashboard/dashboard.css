@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   
-  body {
+  /* body {
     width: 100%;
     min-height: 100vh;
     background-color: #e1e1e1;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   
   .container {
     max-width: 75vw;
