@@ -1,24 +1,70 @@
 import React from "react";
 import "./dashboard.css";
-import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
-import images from "./images";
 
-export default function Dashboard() {
-  console.log(images);
+function Dashboard() {
+  const [data, setData] = useState([]);
+  const carousel = useRef(null);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/static/shoes.json")
+      .then((response) => response.json())
+      .then(setData);
+  }, []);
+
+  const handleLeftClick = (e) => {
+    e.preventDefault();
+
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  };
+
+  const handleRightClick = (e) => {
+    e.preventDefault();
+
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+  };
+
+  if (!data || !data.length) return null;
+
   return (
-    <div>
-      <motion.div className="carousel">
-        <motion.div className="inner-carousel">
-          {images.map((image) => {
-            return (
-              <motion.div className="item">
-                <img src={image} alt="" />
-              </motion.div>
-            );
-          })}
-        </motion.div>
-      </motion.div>
+    <div className="container">
+      <div className="logo">
+        <img src="../../static/images/super-shoes.png"></img>
+      </div>
+
+      <div className="carousel" ref={carousel}>
+        {data.map((item) => {
+          const { id, name, price, oldPrice, image } = item;
+          return (
+            <div className="item" key={id}>
+              <div className="image">
+                <img src={image} alt={name} />
+              </div>
+              <div className="info">
+                <span className="name">{name}</span>
+                <span className="old price">{oldPrice}</span>
+                <span className="price">{price}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="buttons">
+        <button onClick={handleLeftClick}>
+          <img
+            src="../../static/images/216151_right_chevron_icon.png"
+            alt="Scroll Left"
+          />
+        </button>
+        <button onClick={handleRightClick}>
+          <img
+            src="../../static/images/216151_right_chevron_icon.png"
+            alt="Scroll Right"
+          />
+        </button>
+      </div>
     </div>
   );
 }
+
+export default Dashboard;
