@@ -31,3 +31,20 @@
     height: 35px;
     color: white;
 }
+.user_info{
+    display: flex;
+    justify-content: space-between;
+}
+.row_input{
+    margin: 3px 5px;
+}
+.row_input input{
+    border: 1px solid gray;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.row_input label{
+    color: black;
+    text-transform: uppercase;
+}
