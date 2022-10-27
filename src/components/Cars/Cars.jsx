@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Cars() {
-  return (
-    <div>Cars</div>
-  )
+  return <div>Cars</div>;
 }

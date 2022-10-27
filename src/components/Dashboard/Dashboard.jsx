@@ -38,8 +38,7 @@ function Dashboard() {
               </div>
               <div className="info">
                 <span className="name">{name}</span>
-                <span className="old price">{oldPrice}</span>
-                <span className="price">{price}</span>
+                <button className="old price">{oldPrice}</button>
               </div>
             </div>
           );
