@@ -28,10 +28,6 @@ function Dashboard() {
 
   return (
     <div className="container2">
-      <div className="logo">
-        <img src="../../static/images/super-shoes.png"></img>
-      </div>
-
       <div className="carousel" ref={carousel}>
         {data.map((item) => {
           const { id, name, price, oldPrice, image } = item;
