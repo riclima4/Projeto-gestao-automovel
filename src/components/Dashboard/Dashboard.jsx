@@ -27,7 +27,7 @@ function Dashboard() {
   if (!data || !data.length) return null;
 
   return (
-    <div className="container">
+    <div className="container2">
       <div className="logo">
         <img src="../../static/images/super-shoes.png"></img>
       </div>
