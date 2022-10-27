@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background-color: #dbdbdb;
 }
 .nav{
     height: calc(var(--header-height) + 1.5rem);
@@ -30,7 +30,9 @@
     color: var(--title-color);
     font-weight: var(--font-medium); 
     transition: .3s;
+    text-decoration: none;
 }
+.nav__texto
 .nav__icon,
 .nav__close,
 .nav__toggle {
@@ -90,13 +92,18 @@
         font-size: 1.1rem;
         cursor: pointer;
     }
-
+    .nav__texto,
     .nav__icon,
     .nav__close,
     .nav__toggle{
         display: block;
     }
 }
+.img_menu{
+    border-radius: 50%;
+    height: 22px;
+}
+
 @media screen and (max-width: 350px) {
     .nav__menu{
         padding: 2rem 0.25rem 4rem;

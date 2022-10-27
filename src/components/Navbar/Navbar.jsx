@@ -17,17 +17,17 @@ export default function Navbar() {
                     </li>
                     <li className="nav__item">
                         <Link to="/carros" className="nav__link">
-                            <i className="uil uil-nerd nav__icon"></i> Carros
+                            <i className="uil uil-car nav__icon"></i> Carros
+                        </Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link to="/help" className="nav__link">
+                            <i className="uil uil-question-circle nav__icon"></i> Ajuda
                         </Link>
                     </li>
                     <li className="nav__item">
                         <Link to="/conta" className="nav__link">
-                            <i className="uil uil-comment nav__icon"></i> Conta
-                        </Link>
-                    </li>
-                    <li className="nav__item">
-                        <Link to="/conta" className="nav__link">
-                            <i className="uil uil-comment nav__icon"></i> Ajuda
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" className="img_menu" alt="Avatar"/> <div className="nav__texto">Conta</div>
                         </Link>
                     </li>
                 </ul>
