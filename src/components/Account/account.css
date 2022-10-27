@@ -1,0 +1,33 @@
+.img_account{
+    border-radius: 50%;
+    height: 200px;
+}
+.account_img{
+    text-align: center;
+}
+.account_info{
+    border-bottom: 5px;
+    background-color: rgb(206, 214, 214);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.077);
+   /*exemplo da altura*/
+    height: 1000px;
+}
+.title_info{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: rgb(242, 242, 242);
+    align-items: center;
+    padding: 0 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+   
+    
+}
+.btn_edit{
+    background-color: rgb(70, 70, 219);
+    border-radius: 5px;
+    padding: 2px 5px;
+    height: 35px;
+    color: white;
+}
