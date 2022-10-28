@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <main className="main">
           <Routes>
-            <Route exact path="/" element={<Dashboard />} />
+            <Route exact path="/" element={<Youtube />} />
             <Route path="/cars" element={<Cars />} />
             <Route path="/conta" element={<Account />} />
             <Route path="/ajuda" element={<Help />} />
