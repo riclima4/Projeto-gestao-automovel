@@ -6,6 +6,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Cars from "./components/Cars/Cars";
 import Account from "./components/Account/Account";
 import Help from "./components/Help/Help";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/ajuda" element={<Help />} />
           </Routes>
         </main>
+        <Footer/>
       </Router>
     </>
   );

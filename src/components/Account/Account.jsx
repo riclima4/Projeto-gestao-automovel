@@ -15,15 +15,21 @@ export default function Account() {
           <div className="account_info">
             <div className="user_info">
               <div className="row_input">
-                <label htmlFor='nome'>Nome</label>
+                <label>Nome: </label>
                 <input className='inputstyle' type="text" name="nome" id="nome" placeholder="Nome do Utilizador"/>
               </div>
               <div className="row_input">
-                <label>Email</label>
-                <input className='inputstyle' type="email" name="email" id="email" />
+                <label>Email: </label>
+                <input className='inputstyle' type="email" name="email" id="email" placeholder="Email do Utilizador"/>
               </div>
-              
-              
+              <div className="row_input">
+                <label>Password: </label>
+                <a href="#" className='passwordChange' >Mudar a password</a>
+              </div>
+              <div className="row_input">
+                <label>NIF: </label>
+                <input className='inputstyle' type="text" name="nome" id="nome" placeholder="Nome do Utilizador"/>
+              </div>              
             </div>
           </div>
         </div>    

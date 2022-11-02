@@ -8,13 +8,12 @@
 .account_info{
     border-bottom: 5px;
     background-color: rgb(206, 214, 214);
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.077);
-   /*exemplo da altura*/
-    height: 1000px;
+    padding: 10px;
 }
 .title_info{
     display: flex;
     justify-content: space-between;
+    
     height: 50px;
     background-color: rgb(242, 242, 242);
     align-items: center;
@@ -33,18 +32,29 @@
 }
 .user_info{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
 }
 .row_input{
-    margin: 3px 5px;
-}
-.row_input input{
-    border: 1px solid gray;
-    padding: 3px;
-    border-radius: 5px;
-    margin: 0 10px;
+    flex: 40%;
+    margin: 10px;
+    padding: 10px;
 }
 .row_input label{
     color: black;
     text-transform: uppercase;
+}
+.passwordChange{
+    margin-left: 5px;
+    color: rgb(0, 84, 0);
+    text-decoration: underline; 
+}
+.inputstyle{
+    width: 100%;
+    border: 1px solid gray;
+    padding: 3px;
+    border-radius: 5px;
+    max-width: 800px;
 }
