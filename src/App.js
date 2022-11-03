@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Router>
-        {/* <Navbar /> */}
+        <Navbar />
           <Routes>
             <Route exact path="/" element={<Dashboard />} />
             <Route path="/carros" element={<Cars />} />
