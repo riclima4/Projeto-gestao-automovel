@@ -58,3 +58,17 @@
     border-radius: 5px;
     max-width: 800px;
 }
+.logout-btn{
+    padding: 4px 7px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+    
+
+}
+.btn-row{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}

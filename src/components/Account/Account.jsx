@@ -7,10 +7,14 @@ export default function Account() {
         <div className='container'>
           <div className="account_img">
             <img src="https://www.w3schools.com/howto/img_avatar.png" className='img_account' alt="Avatar"/>  
+            
+          </div>
+          <div className="btn-row">
+            <button className='logout-btn'>LOGOUT</button>
           </div>
           <div className="title_info">
-              <h1>My Account</h1>
-              <button className='uil uil-edit-alt btn_edit'>Edit</button>
+              <h1>Minha conta</h1>
+              <button className='uil uil-edit-alt btn_edit'>Editar</button>
           </div>
           <div className="account_info">
             <div className="user_info">
