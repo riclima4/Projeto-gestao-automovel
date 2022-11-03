@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container3 {
+   margin:0 auto;
+   width: 80%;
+  }
+
+.video-card{
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+a {
+  text-align: center;
+}
+
+.link-btn{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 14px rgb(0, 0, 0, 0.25);
+  border-radius: 15px;
+  justify-content: center;
+  text-align: center;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.product-card h1{
+  text-align: center;
+}
+.product-card p{
+  text-align: center;
+}
+
+.section__title{
+  margin:50px;
+}
