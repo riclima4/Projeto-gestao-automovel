@@ -28,7 +28,7 @@ export default function Account() {
               </div>
               <div className="row_input">
                 <label>Password: </label>
-                <a href="#" className='passwordChange' >Mudar a password</a>
+                <a href="/" className='passwordChange' >Mudar a password</a>
               </div>
               <div className="row_input">
                 <label>NIF: </label>

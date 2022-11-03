@@ -13,14 +13,12 @@ function App() {
     <>
       <Router>
         <Navbar />
-        {/* <main className="main"> */}
           <Routes>
             <Route exact path="/" element={<Dashboard />} />
             <Route path="/carros" element={<Cars />} />
             <Route path="/conta" element={<Account />} />
             <Route path="/ajuda" element={<Help />} />
           </Routes>
-        {/* </main> */}
         <Footer/>
       </Router>
     </>

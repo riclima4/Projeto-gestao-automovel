@@ -2,10 +2,8 @@
     padding:40px 0;
     background-color:#ffffff;
     color:#4b4c4d;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: relative;
+  margin-top: 20px;
   }
   
   .footer-basic ul {
@@ -64,10 +62,4 @@
   .list-inline{
     display: flex;
     justify-content: center;
-  }
-  @media screen and (max-width: 768px) {
-    
-    .footer-basic{
-        bottom: 1rem;
-    }
   }
