@@ -67,7 +67,6 @@
         bottom: 0;
     }
 
-
     .nav__list{
         display: grid;
         grid-template-columns: repeat(3, 1fr);

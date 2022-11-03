@@ -30,7 +30,7 @@ function Dashboard() {
     <div className="container2">
       <div className="carousel" ref={carousel}>
         {data.map((item) => {
-          const { id, name, price, oldPrice, image } = item;
+          const { id, name, oldPrice, image } = item;
           return (
             <div className="item" key={id}>
               <div className="image">
