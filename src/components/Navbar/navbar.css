@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: #dbdbdb;
+    background-color: #d1d1e9;
 }
 .nav{
     height: calc(var(--header-height) + 1.5rem);
@@ -75,6 +75,7 @@
 
     .nav__icon{
         font-size: 1.2rem;
+        color: red;
     }
     .nav__close{
         position: absolute;
