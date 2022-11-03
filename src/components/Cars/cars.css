@@ -17,13 +17,9 @@
     padding: 25px;
     
 }
-.product-img-name, .product-info{
+.product-info{
     display: flex;
     justify-content: space-between;
-}
-.product-img-name{
-    align-items: center;
-    margin-bottom: 15px;
 }
 .details, .pricing-info{
     flex-basis: 50%;

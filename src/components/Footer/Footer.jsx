@@ -8,8 +8,8 @@ export default function Footer() {
         <footer>
             <div class="social">
                 <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"><i class="icon uil uil-instagram"></i></a>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/"><i class="icon uil uil-linkedin-alt"></i></a>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/"><i class="icon uil uil-facebook-f"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/"><i class="uil-facebook-f"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/"><i class="icon uil uil-linkedin-alt"></i></a>
             </div>
             <ul class="list-inline">
                 <li class="list-inline-item"><Link to="/">Home</Link></li>
