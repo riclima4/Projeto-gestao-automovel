@@ -15,16 +15,16 @@ function App() {
     <>
       <Router>
         <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Dashboard />} />
-            <Route path="/carros" element={<Cars />} />
-            <Route path="/conta" element={<Account />} />
-            <Route path="/ajuda" element={<Help />} />
-             {/* Route para teste V */}
-            <Route path="/login" element={<Login />} />
-            <Route path="/registar" element={<Register />} />
-          </Routes>
-        {/* <Footer/> */}
+        <Routes>
+          <Route exact path="/" element={<Dashboard />} />
+          <Route path="/cars" element={<Cars />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/help" element={<Help />} />
+          {/* Route para teste V */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+        <Footer />
       </Router>
     </>
   );
