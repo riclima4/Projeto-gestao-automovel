@@ -19,7 +19,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav__item">
-              <Link to="/carros" className="nav__link">
+              <Link to="/cars" className="nav__link">
                 <i className="uil uil-car nav__icon"></i> Carros
               </Link>
             </li>
@@ -29,7 +29,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav__item">
-              <Link to="/conta" className="nav__link">
+              <Link to="/account" className="nav__link">
                 <img
                   src="https://www.w3schools.com/howto/img_avatar.png"
                   className="img_menu"

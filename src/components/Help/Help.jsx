@@ -1,6 +1,8 @@
 import React from "react";
 import "./help.css";
 
+import autodoclogo from "../../assets/imgs/autodoc.png";
+
 export default function Help({ data }) {
   return (
     <>
@@ -44,12 +46,9 @@ export default function Help({ data }) {
       <section className="section__cars">
         <div className="section__title">Forums</div>
         <div className="carCards">
-          {/* Link-2 */}
+          {/* Link-1 */}
           <div className="product-card">
-            <img
-              src="https://yt3.ggpht.com/2RDi0Yqnc83dOUNPScKleVtHYjyGW1IY_9fym2pwWwAVYimVjgVUVemmWA3yvaGXJiCKwtSz8A=s900-c-k-c0x00ffffff-no-rj"
-              alt="carro"
-            />
+            <img src={autodoclogo} alt="autodoc" />
             <h1>AutoDoc</h1>
             <div className="help-info">
               <div className="details">
@@ -65,10 +64,7 @@ export default function Help({ data }) {
           </div>
           {/* Link-2 */}
           <div className="product-card">
-            <img
-              src="https://yt3.ggpht.com/2RDi0Yqnc83dOUNPScKleVtHYjyGW1IY_9fym2pwWwAVYimVjgVUVemmWA3yvaGXJiCKwtSz8A=s900-c-k-c0x00ffffff-no-rj"
-              alt="carro"
-            />
+            <img src={autodoclogo} alt="autodoc" />
             <h1>AutoDoc</h1>
             <div className="help-info">
               <div className="details">
