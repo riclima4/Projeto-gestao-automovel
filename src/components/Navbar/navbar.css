@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: #d1d1e9;
+    background-color: #1154d1;
 }
 .nav{
     height: calc(var(--header-height) + 1.5rem);
@@ -21,6 +21,7 @@
 .nav__list{
     display: flex;
     column-gap: 2rem;
+    color:white;
 }
 .nav__link{
     display: flex;
@@ -48,9 +49,10 @@
     .header{
         top: initial;
         bottom: 0;
+        color: white;
     }
     .nav{
-        height: var(--header-height);
+        height: 70px;
     }
     .nav__menu{
         position: fixed;
@@ -65,6 +67,7 @@
     }
     .show-menu{
         bottom: 0;
+        background-color: #1154d1;
     }
 
     .nav__list{
@@ -75,11 +78,11 @@
 
     .nav__icon{
         font-size: 1.2rem;
-        color: red;
+        color: white;
     }
     .nav__close{
         position: absolute;
-        right: 1.3rem;
+        right: 2.6rem;
         bottom: 0.5rem;
         font-size: 1.5rem;
         cursor: pointer;

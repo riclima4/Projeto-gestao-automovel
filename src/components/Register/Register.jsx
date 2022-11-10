@@ -29,13 +29,8 @@ export default function Register() {
                         <label htmlFor="confpassword">Confirma Password</label>
                         <input type="new-password" name="confpassword"></input>
                     </div>
-                    <div className="field field-checkbox">
-                        <label htmlFor="checkbox">
-                            <input type="checkbox" name="checkbox"></input> Continuar logado!
-                        </label>
-                    </div>
                     <div className="field padding-bottom--24">
-                        <button className='field-btn' type="submit" name="submit" >Entrar</button>
+                        <button className='field-btn' type="submit" name="submit" >Registar</button>
                     </div>
                 </form>
 
