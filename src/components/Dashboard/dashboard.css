@@ -1,14 +1,155 @@
-.welcome{
-  background-image: url("../../assets/imgs/welcomeImg.png");
+.welcome {
+  background: url("../../assets/imgs/welcomeImg.png") center center no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   margin: 0 auto;
 }
-.welcomeText{
+.welcomeText {
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  font-size: larger;
+  display: flex;
   align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  height: auto;
+  padding-top: 20rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+.scrollMouse {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+
+  animation: moveScroll 2s linear infinite;
+  cursor: pointer;
+  color: white;
+}
+.scrolldownIcon {
+  font-size: 40px;
+}
+.scrolldownText {
+  font-size: smaller;
+}
+@keyframes moveScroll {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.sectionBtn {
+  background-color: #1154d1;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.sectionBtn:hover {
+  background-color: #0c4bc0;
+}
+.carInfoRowBtn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+.carSectionInfo {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 100px 0;
+}
+.carInfoRow {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.carSectionTittle {
+  text-align: center;
+}
+.carSectionContent {
+  display: flex;
+  margin-inline: 10%;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+.carSectionImg {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+.helpSection {
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+  padding: 100px 0;
+  color: white;
+}
+.helpSectionTittle {
+  text-align: center;
+}
+.helpSectionContent {
+  display: flex;
+  margin-inline: 10%;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+.helpSectionInfo {
+  max-width: 45%;
+}
+.helpInfoRow {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.helpInfoRowBtn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+.helpImg {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+@media screen and (max-width: 970px) {
+  .helpSectionInfo {
+    max-width: 100%;
+  }
+  .helpSectionContent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .carSectionContent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .carInfoRowBtn {
+    justify-content: center;
+  }
+  .helpInfoRowBtn {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .welcomeText {
+    font-size: medium;
+  }
 }
