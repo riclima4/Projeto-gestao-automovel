@@ -1,11 +1,13 @@
 import React from "react";
 import "./help.css";
 
-import autodoclogo from "../../assets/imgs/autodoc.png";
+import thumbnail1 from "../../assets/imgs/Thumbnail-1.jpg";
+import thumbnail2 from "../../assets/imgs/Thumbnail-2.jpg";
 
 export default function Help({ data }) {
   return (
     <>
+      {/* ^TOP BANNER*/}
       <section className="helpBanner">
         <div className="helpBannerTitle">
           <h1>Bem vindo a zona de ajuda da CarCRTL</h1>
@@ -14,81 +16,65 @@ export default function Help({ data }) {
           </p>
         </div>
       </section>
-      {/* Zona de vids */}
-      <section className="section__cars">
-        <div className="section__title"></div>
-        <div className="carCards">
-          <div className="video-card">
-            <iframe
-              src="https://www.youtube.com/embed/videoseries?list=PLq2YjDQLtrfL0wTAaA2r_xuvjLibppY9O"
-              title="playlist1"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div className="video-card">
-            <iframe
-              src="https://www.youtube.com/embed/videoseries?list=PLq2YjDQLtrfJB44FH0yq7qKH9hPBiMwoB"
-              title="playlist1"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div className="video-card">
-            <iframe
-              src="https://www.youtube.com/embed/videoseries?list=PLq2YjDQLtrfId1QSUiFIL1l163bIfxt3p"
-              title="playlist1"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div className="video-card">
-            <iframe
-              src="https://www.youtube.com/embed/videoseries?list=PLq2YjDQLtrfJfLKViaU7H2GjB7ng4Co56"
-              title="playlist1"
-              allowFullScreen
-            ></iframe>
-          </div>
+      <h1 className="section__title">Forums de Ajuda</h1>
+      {/* ^TOP BANNER END */}
+      {/* INFO BANNER-1*/}
+      <section className="infoBannerR">
+        <div className="infoBannerTextR">
+          <h1>Dicas e boas praticas a realizar</h1>
+          <p>
+            Caso precise de ajuda fornecemos aqui o fórum de dicas da AutoDoc
+            que contem dicas e boas praticas a realizar para uma maior
+            longevidade do seu veículo
+          </p>
+          <a
+            className="link-btn"
+            href="https://www.auto-doc.pt/info/category/dicas"
+          >
+            Visitar
+          </a>
+        </div>
+        <div className="infoBannerImgR"></div>
+      </section>
+      {/* INFO BANNER-1 END*/}
+      {/* VID BANNER-1*/}
+      <section className="vidBanner">
+        <a
+          className="vidBannerIMG"
+          href="https://youtube.com/playlist?list=PLq2YjDQLtrfL0wTAaA2r_xuvjLibppY9O"
+        >
+          <img img src={thumbnail1}></img>
+        </a>
+      </section>
+      {/* VID BANNER-1END*/}
+      {/* INFO BANNER-2*/}
+      <section className="infoBannerL">
+        <div className="infoBannerImgL"></div>
+        <div className="infoBannerTextL">
+          <h1>Diagnostico do veículo</h1>
+          <p>
+            Caso pretenda realizar um diagnóstico do seu veículo fornecemos o
+            fórum da AutoDoc com informações de ajuda na realização de um
+            diagnóstico em casa
+          </p>
+          <a
+            className="link-btn"
+            href="https://www.auto-doc.pt/info/category/diagnostico"
+          >
+            Visitar
+          </a>
         </div>
       </section>
-      {/* ZONA DE LINS */}
-      <section className="section__cars">
-        <div className="section__title">Forums</div>
-        <div className="carCards">
-          {/* Link-1 */}
-          <div className="product-card">
-            <img src={autodoclogo} alt="autodoc" />
-            <h1>AutoDoc</h1>
-            <div className="help-info">
-              <div className="details">
-                <p>Dicas Gerais</p>
-              </div>
-            </div>
-            <a
-              className="link-btn"
-              href="https://www.auto-doc.pt/info/category/dicas"
-            >
-              Visitar
-            </a>
-          </div>
-          {/* Link-2 */}
-          <div className="product-card">
-            <img src={autodoclogo} alt="autodoc" />
-            <h1>AutoDoc</h1>
-            <div className="help-info">
-              <div className="details">
-                <p>Diagnostico</p>
-              </div>
-            </div>
-            <a
-              className="link-btn"
-              href="https://www.auto-doc.pt/info/category/diagnostico"
-            >
-              Visitar
-            </a>
-          </div>
+      {/* INFO BANNER-1 END*/}
+      {/* VID BANNER-2*/}
+      <section className="vidBanner">
+        <div className="vidBannerIMG">
+          <a href="https://youtube.com/playlist?list=PLq2YjDQLtrfJB44FH0yq7qKH9hPBiMwoB">
+            <img src={thumbnail2}></img>
+          </a>
         </div>
       </section>
+      {/* VID BANNER-2END*/}
     </>
   );
 }
