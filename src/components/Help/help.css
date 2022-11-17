@@ -14,15 +14,11 @@
 }
 
 .link-btn{
-  text-decoration: none;
-  background-color:rgb(17, 84, 209);
-  box-shadow: 0 0 14px rgb(0, 0, 0, 0.25);
-  border-radius: 5px;
-  justify-content: center;
+  width: 15%;
   text-align: center;
-  display: block;
-  width: 80px;
-  position: relative;
+  padding: 10px 0px;
+  border-radius: 5px;
+  background-color: rgb(17, 84, 209);
   color: white;
 }
 .product-card h1{
@@ -64,55 +60,63 @@ overflow-y: hidden;
 
 .infoBannerR{
   background-color:black;
-  height: 50vh;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .infoBannerTextR{
+display: flex;
+flex-direction: column;
 padding-left: 5rem;
-align-items: start;
+padding-right: 5rem;
 color: white;
 width:60%;
 }
 .infoBannerImgR{
-background-image: url(../../assets/imgs/BGrepair.jpg);
-background-size:cover;
 height:100%;
 width:40%;
 }
 
 .infoBannerL{
   background-color:black;
-  height: 50vh;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .infoBannerTextL{
+  display: flex;
+  flex-direction: column;
   padding-left: 5rem;
-  align-items:start;
+  padding-right: 5rem;
   color: white;
   width:60%;
   }
 
 .infoBannerImgL{
-  background-image: url(../../assets/imgs/BGmecanic.jpg);
-  background-size:cover;
   height:100%;
-  width:40%;
+  width:60%;
   }
-  
-  .vidBanner{
+  .flex-img1{
     display: flex;
-    justify-content:center;
-  }
-
-  .vidBannerIMG{
-    width:50%;
-    margin: 0 auto;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
   }
   .vidBannerIMG img{
+    height:100%;
+    width: 100%;
+  }
+
+  .flex-img2{
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    width: 40%;
+  }
+
+  .btn-move{
+    display: flex;
+    align-items: flex-end;
+    justify-content:end;
   }
