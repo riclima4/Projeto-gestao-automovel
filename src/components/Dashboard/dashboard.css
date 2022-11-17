@@ -45,6 +45,27 @@
     transform: translateY(0px);
   }
 }
+.sectionBtn {
+  background-color: #1154d1;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.sectionBtn:hover {
+  background-color: #0c4bc0;
+}
+.carInfoRowBtn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
 .carSectionInfo {
   background-color: rgb(255, 255, 255);
   width: 100%;
@@ -76,7 +97,6 @@
   background-color: rgb(32, 32, 32);
   width: 100%;
   padding: 100px 0;
-
   color: white;
 }
 .helpSectionTittle {
@@ -97,6 +117,11 @@
   gap: 10px;
   justify-content: flex-start;
 }
+.helpInfoRowBtn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
 .helpImg {
   width: 500px;
   height: 300px;
@@ -114,6 +139,12 @@
   }
   .carSectionContent {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .carInfoRowBtn {
+    justify-content: center;
+  }
+  .helpInfoRowBtn {
     justify-content: center;
   }
 }

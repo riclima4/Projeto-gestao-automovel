@@ -2,6 +2,7 @@ import React from "react";
 import "./dashboard.css";
 import helpImg from "../../assets/imgs/helpImg.jpg";
 import carSectionImg from "../../assets/imgs/carSectionImg.jpg";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
@@ -43,6 +44,11 @@ function Dashboard() {
                 um dos teus carros
               </p>
             </div>
+            <div className="carInfoRowBtn">
+              <Link to="/cars" className="sectionBtn">
+                Ir para a secção
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -73,6 +79,11 @@ function Dashboard() {
                 Receba uma lista com todas as ferramentas, produtos de cuidado e
                 acessórios que precisará para determinadas reparações.
               </p>
+            </div>
+            <div className="helpInfoRowBtn">
+              <Link to="/help" className="sectionBtn">
+                Ir para a secção
+              </Link>
             </div>
           </div>
           <img src={helpImg} alt="helpImg" className="helpImg" />
