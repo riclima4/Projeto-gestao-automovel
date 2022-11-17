@@ -20,20 +20,19 @@ export default function Account() {
     <section className="home section">
       <div className="container">
         <div className="account_img">
-          <img
-            src="https://www.w3schools.com/howto/img_avatar.png"
-            className="img_account"
-            alt="Avatar"
-          />
+          <a href="#" className="editImg">
+            <img
+              src="https://www.w3schools.com/howto/img_avatar.png"
+              className="img_account"
+              alt="Avatar"
+            />
+            <div class="uil uil-edit edit-btn-icon"></div>
+          </a>
         </div>
-        <div className="btn-row">
-          <button onClick={handleLogout} className="logout-btn">
-            LOGOUT
-          </button>
-        </div>
+
         <div className="title_info">
           <h1>Minha conta</h1>
-          <button className="uil uil-edit-alt btn_edit">Editar</button>
+          <button className="uil uil-edit-alt btn_edit"></button>
         </div>
         <div className="account_info">
           <div className="user_info">
@@ -68,6 +67,7 @@ export default function Account() {
             <div className="row_input">
               <label>NIF: </label>
               <input
+                disabled
                 className="inputstyle"
                 type="text"
                 name="nome"
@@ -76,6 +76,11 @@ export default function Account() {
               />
             </div>
           </div>
+        </div>
+        <div className="btn-row">
+          <button onClick={handleLogout} className="logout-btn">
+            LOGOUT
+          </button>
         </div>
       </div>
     </section>

@@ -1,74 +1,98 @@
-.img_account{
-    border-radius: 50%;
-    height: 200px;
+.account_img {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
-.account_img{
-    text-align: center;
+.img_account {
+  border-radius: 50%;
+  height: 200px;
 }
-.account_info{
-    border-bottom: 5px;
-    background-color: rgba(214, 206, 206, 0.466);
-    padding: 10px;
+.editImg {
+  position: relative;
+  height: 200px;
 }
-.title_info{
-    display: flex;
-    justify-content: space-between;
-    
-    height: 50px;
-    background-color: rgb(242, 242, 242);
-    align-items: center;
-    padding: 0 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-   
-    
+.editImg:hover .img_account {
+  opacity: 0.7;
 }
-.btn_edit{
-    background-color: rgb(70, 70, 219);
-    border-radius: 5px;
-    padding: 2px 5px;
-    height: 35px;
-    color: white;
+.editImg:hover .edit-btn-icon {
+  display: block;
 }
-.user_info{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-}
-.row_input{
-    flex: 40%;
-    margin: 10px;
-    padding: 10px;
-}
-.row_input label{
-    color: black;
-    text-transform: uppercase;
-}
-.passwordChange{
-    margin-left: 5px;
-    color: rgb(0, 84, 0);
-    text-decoration: underline; 
-}
-.inputstyle{
-    width: 100%;
-    border: 1px solid gray;
-    padding: 3px;
-    border-radius: 5px;
-    max-width: 800px;
-}
-.logout-btn{
-    padding: 4px 7px;
-    background-color: #dc3545;
-    color: white;
-    border-radius: 5px;
-    
 
+.edit-btn-icon {
+  position: absolute;
+  color: black;
+  top: 46%;
+  left: 46%;
+  font-size: large;
+  display: none;
 }
-.btn-row{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    text-align: center;
+.account_info {
+  border-bottom: 5px;
+  background-color: rgba(214, 206, 206, 0.466);
+  padding: 10px;
+}
+.title_info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  height: 50px;
+  background-color: rgb(242, 242, 242);
+  align-items: center;
+  padding: 0 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.btn_edit {
+  background-color: rgb(70, 70, 219);
+  border-radius: 5px;
+  padding: 2px 10px;
+  height: 35px;
+  color: white;
+  font-size: large;
+}
+.btn_edit:hover {
+  background-color: rgb(57, 57, 186);
+}
+.user_info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+.row_input {
+  flex: 40%;
+  margin: 10px;
+  padding: 10px;
+}
+.row_input label {
+  color: black;
+  text-transform: uppercase;
+}
+.passwordChange {
+  margin-left: 5px;
+  color: rgb(0, 84, 0);
+  text-decoration: underline;
+}
+.inputstyle {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 3px;
+  border-radius: 5px;
+  max-width: 800px;
+}
+.logout-btn {
+  padding: 7px 20px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 5px;
+}
+.logout-btn:hover {
+  background-color: #b62332;
+}
+.btn-row {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: end;
 }
