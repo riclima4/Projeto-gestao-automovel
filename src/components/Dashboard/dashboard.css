@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   display: flex;
-
+  text-align: center;
   animation: moveScroll 2s linear infinite;
   cursor: pointer;
   color: white;

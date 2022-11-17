@@ -72,7 +72,7 @@ export default function Account() {
                 type="text"
                 name="nome"
                 id="nome"
-                placeholder="Nome do Utilizador"
+                placeholder="NIF"
               />
             </div>
           </div>
