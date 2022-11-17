@@ -6,8 +6,17 @@ import autodoclogo from "../../assets/imgs/autodoc.png";
 export default function Help({ data }) {
   return (
     <>
+      <section className="helpBanner">
+        <div className="helpBannerTitle">
+          <h1>Bem vindo a zona de ajuda da CarCRTL</h1>
+          <p>
+            Aqui podem achar algumas ferramentas de ajuda na reparaçao automovel
+          </p>
+        </div>
+      </section>
+      {/* Zona de vids */}
       <section className="section__cars">
-        <div className="section__title">Help</div>
+        <div className="section__title"></div>
         <div className="carCards">
           <div className="video-card">
             <iframe

@@ -1,18 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   .container3 {
    margin:0 auto;
    width: 80%;
   }
 
-.video-card{
-  box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 15px;
+.video-card h2{
+  text-align: center
 }
 
 a {
@@ -40,3 +32,21 @@ a {
 .section__title{
   margin:50px;
 }
+
+.helpBanner{
+  background-image: url(../../assets/imgs/helpbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+.helpBannerTitle{
+display: flex;
+flex-direction: column;
+padding-top:6rem;
+padding-left: 5rem;
+align-items: start;
+overflow-y: hidden;
+}
+
