@@ -14,7 +14,7 @@
 }
 
 .link-btn{
-  width: 15%;
+  width: 30%;
   text-align: center;
   padding: 10px 0px;
   border-radius: 5px;
@@ -59,7 +59,7 @@ overflow-y: hidden;
 
 
 .infoBannerR{
-  background-color:black;
+  background-color:rgb(32, 32, 32);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,7 +78,7 @@ width:40%;
 }
 
 .infoBannerL{
-  background-color:black;
+  background-color:rgb(32, 32, 32);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,5 +118,5 @@ width:40%;
   .btn-move{
     display: flex;
     align-items: flex-end;
-    justify-content:end;
+    justify-content:center;
   }
