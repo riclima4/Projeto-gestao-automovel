@@ -12,6 +12,7 @@ import Register from "./components/Register/Register";
 import { AuthContextProvider } from "./context/AuthContext";
 import ProtectedRouteNotLogin from "./components/ProtectedRouteNotLogin";
 import ProtectedRouteLogged from "./components/ProtectedRouterLogged";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/cars" element={<Cars />} />
               <Route path="/account" element={<Account />} />
               <Route path="/help" element={<Help />} />
+              <Route path="/modal" element={<Modal />} />
             </Route>
             <Route element={<ProtectedRouteLogged />}>
               <Route path="/login" element={<Login />} />
