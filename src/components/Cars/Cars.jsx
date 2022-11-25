@@ -1,7 +1,8 @@
 import React from "react";
 import "./cars.css";
 
-export default function Cars() {
+export default function Cars(props) {
+  props.funcNav(true);
   return (
     <section className="section__cars">
       <div className="section__title">Cars</div>

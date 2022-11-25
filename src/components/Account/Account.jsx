@@ -3,7 +3,8 @@ import "./account.css";
 import { UserAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
-export default function Account() {
+export default function Account(props) {
+  props.funcNav(true);
   const { user, logout } = UserAuth();
   const navigate = useNavigate();
   const handleLogout = async () => {

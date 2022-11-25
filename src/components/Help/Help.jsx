@@ -6,10 +6,10 @@ import thumbnail2 from "../../assets/imgs/Thumbnail-2.jpg";
 import bgRepair from "../../assets/imgs/BGrepair.jpg";
 import bgMecanic from "../../assets/imgs/BGmecanic.jpg";
 
-export default function Help({ data }) {
+export default function Help(props) {
+  props.funcNav(true);
   return (
     <>
-      {/* ^TOP BANNER*/}
       <section className="helpBanner">
         <div className="helpBannerTitle">
           <h1>Bem vindo a zona de ajuda da CarCRTL</h1>
@@ -19,8 +19,6 @@ export default function Help({ data }) {
         </div>
       </section>
       <h1 className="section__title">Forums de Ajuda</h1>
-      {/* ^TOP BANNER END */}
-      {/* INFO BANNER-1*/}
       <section className="infoBannerR">
         <div className="infoBannerTextR">
           <div>
@@ -50,12 +48,7 @@ export default function Help({ data }) {
           </a>
         </div>
       </section>
-      {/* INFO BANNER-1 END*/}
-      {/* VID BANNER-1*/}
       <section className="vidBanner"></section>
-      {/* VID BANNER-1END*/}
-      {/* INFO BANNER-2*/}
-
       <section className="infoBannerL">
         <div className="flex-img2">
           <img src={bgMecanic} alt="img1"></img>
@@ -66,9 +59,6 @@ export default function Help({ data }) {
             <img img src={thumbnail2}></img>
           </a>
         </div>
-
-        {/* INFO BANNER-1 END*/}
-        {/* VID BANNER-1*/}
         <section className="vidBanner"></section>
         <div className="infoBannerTextL">
           <h1>Diagnóstico do veículo</h1>

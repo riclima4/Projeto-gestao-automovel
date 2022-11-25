@@ -4,7 +4,8 @@ import helpImg from "../../assets/imgs/helpImg.jpg";
 import carSectionImg from "../../assets/imgs/carSectionImg.jpg";
 import { Link } from "react-router-dom";
 
-function Dashboard() {
+function Dashboard(props) {
+  props.funcNav(true);
   return (
     <>
       <section className="welcome">
