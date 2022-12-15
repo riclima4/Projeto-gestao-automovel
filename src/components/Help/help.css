@@ -1,19 +1,19 @@
-  .container3 {
-   margin:0 auto;
-   width: 80%;
-  }
+.container3 {
+  margin: 0 auto;
+  width: 80%;
+}
 
-.video-card{
+.video-card {
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 20px;
 }
 
-.video-card h2{
-  text-align: center
+.video-card h2 {
+  text-align: center;
 }
 
-.link-btn{
+.link-btn {
   width: 15%;
   text-align: center;
   padding: 10px 0px;
@@ -21,102 +21,100 @@
   background-color: rgb(17, 84, 209);
   color: white;
 }
-.product-card h1{
+.product-card h1 {
   text-align: center;
 }
-.product-card p{
+.product-card p {
   text-align: center;
 }
 
-.section__title{
-  margin:50px;
+.section__title {
+  margin: 50px;
 }
 
-.helpBanner{
+.helpBanner {
   background-image: url(../../assets/imgs/helpbg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 30vh;
   margin: 0 auto;
 }
-.helpBannerTitle{
-display: flex;
-flex-direction: column;
-padding-top:6rem;
-padding-left: 5rem;
-align-items: start;
-overflow-y: hidden;
+.helpBannerTitle {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  padding-left: 5rem;
+  align-items: start;
+  overflow-y: hidden;
 }
 
-.LinkCards{
+.LinkCards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  
 }
 
-
-.infoBannerR{
-  background-color:black;
+.infoBannerR {
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.infoBannerTextR{
-display: flex;
-flex-direction: column;
-padding-left: 5rem;
-padding-right: 5rem;
-color: white;
-width:60%;
-}
-.infoBannerImgR{
-height:100%;
-width:40%;
-}
-
-.infoBannerL{
-  background-color:black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.infoBannerTextL{
+.infoBannerTextR {
   display: flex;
   flex-direction: column;
   padding-left: 5rem;
   padding-right: 5rem;
   color: white;
-  width:60%;
-  }
+  width: 60%;
+}
+.infoBannerImgR {
+  height: 100%;
+  width: 40%;
+}
 
-.infoBannerImgL{
-  height:100%;
-  width:60%;
-  }
-  .flex-img1{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 40%;
-  }
-  .vidBannerIMG img{
-    height:100%;
-    width: 100%;
-  }
+.infoBannerL {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .flex-img2{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 40%;
-  }
+.infoBannerTextL {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: white;
+  width: 60%;
+}
 
-  .btn-move{
-    display: flex;
-    align-items: flex-end;
-    justify-content:end;
-  }
+.infoBannerImgL {
+  height: 100%;
+  width: 60%;
+}
+.flex-img1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+}
+.vidBannerIMG img {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-img2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+}
+
+.btn-move {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}

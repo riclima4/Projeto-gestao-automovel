@@ -12,6 +12,7 @@ import Register from "./components/Register/Register";
 import { AuthContextProvider } from "./context/AuthContext";
 import ProtectedRouteNotLogin from "./components/ProtectedRouteNotLogin";
 import ProtectedRouteLogged from "./components/ProtectedRouterLogged";
+import Carro from "./pages/Carro/Carro";
 
 function App() {
   const [showNav, setShowNav] = useState(true);
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<ProtectedRouteNotLogin />}>
               <Route index element={<Dashboard funcNav={setShowNav} />} />
               <Route path="/cars" element={<Cars funcNav={setShowNav} />} />
+              <Route path="/carro" element={<Carro funcNav={setShowNav} />} />
               <Route
                 path="/account"
                 element={<Account funcNav={setShowNav} />}
