@@ -13,11 +13,11 @@
   flex-direction: column;
   margin: 0 auto;
   height: auto;
-  padding-top: 35rem;
+  padding-top: 30rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
 }
 .scrollMouse {
   flex-direction: column;
