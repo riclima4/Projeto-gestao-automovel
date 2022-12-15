@@ -13,7 +13,7 @@
   flex-direction: column;
   margin: 0 auto;
   height: auto;
-  padding-top: 20rem;
+  padding-top: 35rem;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   display: flex;
-
+  text-align: center;
   animation: moveScroll 2s linear infinite;
   cursor: pointer;
   color: white;

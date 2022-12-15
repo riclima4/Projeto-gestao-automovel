@@ -7,7 +7,8 @@ import carImg from "../../assets/imgs/car-img.jpg";
 
 // import { ReactComponent as SvgName } from '../../assets/imgs/img.svg' --> <SvgName />
 
-export default function Login() {
+export default function Login(props) {
+  props.funcNav(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");

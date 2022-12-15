@@ -9,7 +9,7 @@ export default function Navbar() {
     <header className="header">
       <nav className="nav container">
         <Link to="/" className="nav__logo">
-          <Logoipsum/>
+          <Logoipsum />
         </Link>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
@@ -30,12 +30,12 @@ export default function Navbar() {
             </li>
             <li className="nav__item">
               <Link to="/account" className="nav__link">
+                <div className="nav__texto">Conta</div>
                 <img
                   src="https://www.w3schools.com/howto/img_avatar.png"
                   className="img_menu"
                   alt="Avatar"
                 />{" "}
-                <div className="nav__texto">Conta</div>
               </Link>
             </li>
           </ul>

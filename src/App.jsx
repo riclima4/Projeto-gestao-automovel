@@ -14,25 +14,32 @@ import ProtectedRouteNotLogin from "./components/ProtectedRouteNotLogin";
 import ProtectedRouteLogged from "./components/ProtectedRouterLogged";
 
 function App() {
+  const [showNav, setShowNav] = useState(true);
   return (
     <>
       <Router>
-        <Navbar />
+        {showNav && <Navbar />}
         <AuthContextProvider>
           <Routes>
             <Route path="/" element={<ProtectedRouteNotLogin />}>
-              <Route index element={<Dashboard />} />
-              <Route path="/cars" element={<Cars />} />
-              <Route path="/account" element={<Account />} />
-              <Route path="/help" element={<Help />} />
+              <Route index element={<Dashboard funcNav={setShowNav} />} />
+              <Route path="/cars" element={<Cars funcNav={setShowNav} />} />
+              <Route
+                path="/account"
+                element={<Account funcNav={setShowNav} />}
+              />
+              <Route path="/help" element={<Help funcNav={setShowNav} />} />
             </Route>
             <Route element={<ProtectedRouteLogged />}>
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login funcNav={setShowNav} />} />
+              <Route
+                path="/register"
+                element={<Register funcNav={setShowNav} />}
+              />
             </Route>
           </Routes>
         </AuthContextProvider>
-        <Footer />
+        {showNav && <Footer />}
       </Router>
     </>
   );

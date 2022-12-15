@@ -6,7 +6,8 @@ import carImg from "../../assets/imgs/car-img.jpg";
 import { Link, useNavigate } from "react-router-dom";
 // import { ReactComponent as SvgName } from '../../assets/imgs/img.svg' --> <SvgName />
 
-export default function Register() {
+export default function Register(props) {
+  props.funcNav(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
