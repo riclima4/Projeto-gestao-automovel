@@ -1,5 +1,6 @@
 import Sequelize from "sequelize";
 import { dbInstance } from "../config/db.js";
+import { CarsModel } from "./cars.js";
 import { UserCatModel } from "./userCategoria.js";
 
 const UserModel = dbInstance.define("users", {
@@ -69,5 +70,4 @@ const UserModel = dbInstance.define("users", {
   },
 });
 UserModel.belongsTo(UserCatModel, { foreignKey: "idUserCat" });
-UserCatModel.hasMany(UserModel);
 export { UserModel };

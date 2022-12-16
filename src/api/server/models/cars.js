@@ -1,5 +1,6 @@
 import Sequelize from "sequelize";
 import { dbInstance } from "../config/db.js";
+import { UserModel } from "./users.js";
 
 const CarsModel = dbInstance.define("cars", {
   idCarro: {
