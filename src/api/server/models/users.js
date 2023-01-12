@@ -1,22 +1,10 @@
 import Sequelize from "sequelize";
 import { dbInstance } from "../config/db.js";
 import { CarsModel } from "./cars.js";
-import { UserCatModel } from "./userCategoria.js";
 
 const UserModel = dbInstance.define("users", {
   NIF: {
     type: Sequelize.INTEGER(9),
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-    },
-  },
-  idUserCat: {
-    type: Sequelize.INTEGER,
-    references: {
-      model: UserCatModel,
-      key: "idUserCat",
-    },
     allowNull: false,
     validate: {
       notEmpty: true,
@@ -69,5 +57,4 @@ const UserModel = dbInstance.define("users", {
     },
   },
 });
-UserModel.belongsTo(UserCatModel, { foreignKey: "idUserCat" });
 export { UserModel };
